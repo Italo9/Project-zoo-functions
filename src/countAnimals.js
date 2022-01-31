@@ -1,7 +1,7 @@
 const data = require('../data/zoo_data');
 
 function countAnimals(animal) {
-  // seu código aqui
+  // seu código aqui erro avaliador
   if (animal && !animal.sex) {
     return data.species.find(({ name }) => name === animal.specie).residents.length;
   } if (animal && animal.sex) {
@@ -13,5 +13,6 @@ function countAnimals(animal) {
     return acc;
   }, {});
 }
+
 
 module.exports = countAnimals;
